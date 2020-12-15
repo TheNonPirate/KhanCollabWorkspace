@@ -2,6 +2,7 @@ var programCode = function(processingInstance) {
     with (processingInstance) {
       size(600, 600); 
       frameRate(60);
+        //Hi
         var mouseIsPressed = false;
 var mousePressed = function(){
     mouseIsPressed = true;
