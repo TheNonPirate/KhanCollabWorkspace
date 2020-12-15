@@ -2,6 +2,13 @@ var programCode = function(processingInstance) {
     with (processingInstance) {
       size(600, 600); 
       frameRate(60);
+        var mouseIsPressed = false;
+var mousePressed = function(){
+    mouseIsPressed = true;
+};
+var mouseReleased = function(){
+    mouseIsPressed = false;
+};
 var cloneObject = function(obj){
     var newObj = {};
     if(obj.push){
