@@ -2,12 +2,12 @@ var programCode = function(processingInstance) {
     with (processingInstance) {
       size(600, 600); 
       frameRate(60);
-        var mouseIsPressed = false;
+        var mouseIsPress = false;
 var mousePressed = function(){
-    mouseIsPressed = true;
+    mouseIsPress = true;
 };
 var mouseReleased = function(){
-    mouseIsPressed = false;
+    mouseIsPress = false;
 };
 var cloneObject = function(obj){
     var newObj = {};
@@ -10492,7 +10492,7 @@ Person.prototype.move = function(){
         }
         var hotkeyPowers = data.get_value("hotkey powers");
         var selected = data.get_value("hotkey selected");
-        if(mouseIsPressed && this.hotkeyPowers[selected].reload <= 0 && mouseY > 100){
+        if(mouseIsPress && this.hotkeyPowers[selected].reload <= 0 && mouseY > 100){
             if(this.invisible > 0){
                 this.invisible = 0;
             }
@@ -11242,7 +11242,7 @@ var aGUI = function(){
             rect(2+i*120,-5,120,95,6);
             
             noStroke();
-            if(mouseIsPressed){
+            if(mouseIsPress){
                 
                 data.set_value("hotkey selected", i);
                 
