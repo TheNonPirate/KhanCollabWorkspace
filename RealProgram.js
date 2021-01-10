@@ -1,6 +1,5 @@
 var programCode = function(processingInstance) {
     
-     var rotateFn = processing.rotate; processing.rotate = function(angle) { rotateFn(processing.radians(angle)); }
     with (processingInstance) {
       size(600, 600); 
       frameRate(60);
