@@ -1,17 +1,6 @@
 var programCode = function(processingInstance) {
     
-    var rotateFn = processing.rotate;
-    processing.rotate = function(angle) {
-        rotateFn(processing.radians(angle));
-    }
-    var cosFn = processing.cos;
-    processing.cos = function(angle) {
-        return cosFn(processing.radians(angle));
-    }
-    var sinFn = processing.sin;
-    processing.sin = function(angle) {
-        return sinFn(processing.radians(angle));
-    }
+    
     with (processingInstance) {
       size(600, 600); 
       frameRate(60);
