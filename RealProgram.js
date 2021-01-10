@@ -3,10 +3,7 @@ var programCode = function(processingInstance) {
       size(600, 600); 
       frameRate(60);
         var mouseIsPressed = false;
-var mousePressed = function(){
-    mouseIsPressed = true;
-};
-var mouseReleased = function(){
+mouseReleased = function(){
     mouseIsPressed = false;
 };
 var cloneObject = function(obj){
@@ -29,6 +26,7 @@ var data;
 var Person;
 var mouseIsClicked = false;
 mousePressed = function(){
+    mouseIsPressed = true;
     mouseIsClicked = true;
 };
 var Bullet;
