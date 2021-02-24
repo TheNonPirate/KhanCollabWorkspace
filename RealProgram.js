@@ -27,6 +27,7 @@ var data;
 var Person;
 var mouseIsClicked = false;
 mousePressed = function(){
+    mouseIsPressed = true;
     mouseIsClicked = true;
 };
 var Bullet;
