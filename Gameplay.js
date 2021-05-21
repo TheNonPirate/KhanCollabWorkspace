@@ -1,3 +1,8 @@
+var programCode = function(processingInstance) {
+    
+    with (processingInstance) {
+      size(600, 600); 
+      frameRate(60);
 var mouseIsPressed = false;
 mouseReleased = function(){
     mouseIsPressed = false;
@@ -17847,3 +17852,9 @@ var draw = function() {
     }
     mouseIsClicked = false;
 };
+}};
+
+  // Get the canvas that ProcessingJS will use
+  var canvas = document.getElementById("mycanvas"); 
+  // Pass the function to ProcessingJS constructor
+  var processingInstance = new Processing(canvas, programCode);
