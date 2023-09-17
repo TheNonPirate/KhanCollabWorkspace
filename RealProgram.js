@@ -494,9 +494,9 @@ var renderImage = function(img, x, y, w, h) {
     }
 };
 var createBackgroundImage = function() {
-    filter(GRAY);
-    filter(BLUR, 2);
-    fill(255, 200);
+    //filter(GRAY);
+    //filter(BLUR, 2);
+    fill(255, 200, 0);
     rect(width / 2, height / 2, 1000, 1000);
     backgroundImage = get(0, 0, width, height);
 };
